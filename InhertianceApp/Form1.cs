@@ -59,7 +59,16 @@ namespace InhertianceApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            ProductionWorker productionWorker = new ProductionWorker();
+            productionWorker.EmployeeName = txtEmpName.Text;
+            productionWorker.EmployeeNumber = int.Parse(txtEmpNum.Text);
+            productionWorker.Shift = int.Parse(txtShift.Text);
+            productionWorker.HourlyPayRate = double.Parse(txtPayRate.Text);
+            lblOutput.Text = "Employee Name : " + productionWorker.EmployeeName 
+                + Environment.NewLine + "Employee Number : " 
+                + productionWorker.EmployeeNumber + Environment.NewLine 
+                + "Shift : " + productionWorker.Shift + Environment.NewLine 
+                + "Hourly Pay Rate : " + productionWorker.HourlyPayRate;
         }
 
         private void label1_Click(object sender, EventArgs e)
