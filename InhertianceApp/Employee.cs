@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace InhertianceApp
 {
-    internal class Employee
+     class Employee
     {
+        public string EmployeeName { get; set; }
+        public int EmployeeNumber { get; set; }
     }
 }
